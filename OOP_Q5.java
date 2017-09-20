@@ -15,7 +15,14 @@ public class OOP_Q5 {
 
       switch (Choice){
         case 1: Choice = "A";
+            break;
+        case 2: Choice = "S";
+              break;
 
+        case 3: Choice = "M";
+              break;
+        case 4: Choice = "D";
+              break;
 
     }
 
