@@ -1,4 +1,4 @@
-package com.Chris.project;
+//package com.Chris.project;
 
 import javax.swing.*;
 
@@ -19,6 +19,6 @@ public class OOP_Q1 {
 
     int Price = Amount * cost;
 
-    JOptionPane.showMessageDialog(null,Name + " from class " + className + "\n Ordered " + Amount + " Buns which will cost €" + Price);
+    JOptionPane.showMessageDialog(null,Name + " from class " + className + "\n Ordered " + Amount + " Buns which will cost €" + Price + "");
     }
 }
