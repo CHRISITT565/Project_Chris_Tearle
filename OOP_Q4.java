@@ -17,7 +17,7 @@ public class OOP_Q4 {
 
             num = Integer.parseInt(numAsString);
             total += num;
-            num = Integer.parseInt(JOptionPane.showInputDialog("Please enter another number (q to quit)"));
+            numAsString = JOptionPane.showInputDialog("Please enter another number (q to quit)");
             count++;
 
 
