@@ -1,3 +1,5 @@
+import java.lang.Object;
+
 public class BOOK {
     private String title;
     private int pageNum;
@@ -27,6 +29,9 @@ public class BOOK {
         this.isbn = Isbn;
     }
 
+
+
+
     public void setPageNum(int PageNum)
     {
         this.pageNum=PageNum;
@@ -54,7 +59,7 @@ public class BOOK {
     }
 
     public String toString(){
-        return String.format("Title %20s" +
-                "ISBN %20s ");
+        return String.format("Title " + getTitle() +
+                " ISBN  " + getIsbn() + " No Of Pages " + getPageNum() +  " €" +getPrice() + "\n");
     }
 }
