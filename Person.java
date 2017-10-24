@@ -6,7 +6,7 @@ public class Person {
 
     private String Number;
 
-    public Person(){this("no Name",0,"No NUmber Given");}
+    public Person(){this("no Name",0,"No Number Given");}
 
     public Person(String Name,int Age,String Number)
     {

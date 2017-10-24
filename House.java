@@ -1,4 +1,6 @@
-public class House extends Person{
+import javax.naming.NamingEnumeration;
+
+public class House  {
 
 
     private String Address;
@@ -8,7 +10,7 @@ public class House extends Person{
     public Person Owner;
 
 
-    public House(){this( "no Address Specified", "No Type Secifyed", 0.0 ,new Person());}
+    public House(){this( "no Address Specified", "No Type Secifyed", 0.0 ,"No Name",0,"no Contact given");}
 
 
     public House(String Address,String Type,Double Price, String Name, int Age , String Number){
@@ -16,9 +18,8 @@ public class House extends Person{
         setType(Type);
         setAddress(Address);
         setPrice(Price);
-       Owner.setName(Name);
-       Owner.setAge(Age);
-       Owner.setNumber(Number);
+        Owner = new Person(Name,Age,Number);
+
 
 
 
@@ -38,8 +39,10 @@ public class House extends Person{
         this.Price= Price;
     }
 
-    public void setOwner(Person owner) {
-        Owner = owner;
+    public void setOwner(String Name, int Age , String Number) {
+        Owner .setName(Name);
+        Owner.setAge(Age);
+        Owner.setNumber(Number);
     }
 
     public String getAddress() {
@@ -60,6 +63,6 @@ public class House extends Person{
 
     @Override
     public String toString() {
-        return "House at " + getAddress() + " is a " + getType() + " it costs €" + getPrice() + "And is Currently owned by " + getOwner();
+        return "House at " + getAddress() + " is a " + getType() + " it costs €" + getPrice() + "\nAnd is Currently owned by " + getOwner();
     }
 }
